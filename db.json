@@ -1,0 +1,98 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "role": "admin",
+      "email": "admin@domain.tld",
+      "fullname": "Admin Istrator",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "role": "user",
+      "email": "user@domain.tld",
+      "fullname": "John Doe",
+      "password": "admin"
+    }
+  ],
+  "template": [
+    {
+      "id": 1,
+      "name": "Template #1",
+      "fields": {
+
+      }
+    }
+  ],
+  "print_properties": [
+    {
+      "id": 1,
+      "name": "sizes",
+      "label": "Type de livre",
+      "input": "select",
+      "values": [
+        "Livre 15 x 21 (A5)",
+        "Livre 16 x 24",
+        "Livre 21 x 29,7 (A4)",
+        "LivrePoche 11x18"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "paper_kind",
+      "label": "Papier",
+      "input": "select",
+      "values": [
+        "Couché mat 90 g",
+        "Couché mat 115 g",
+        "Couché mat 135 g",
+        "Couché satin 90 g",
+        "Couché satin 115 g",
+        "Couché satin 135 g",
+        "Couché brillant 90 g",
+        "Couché brillant 115 g",
+        "Offset 90 g",
+        "Bouffant 80g Blanc",
+        "Bouffant 80g Crème"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "cover_color",
+      "label": "Couleur de couverture",
+      "input": "radio",
+      "values": [
+        "Couleur",
+        "Noir et blanc"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "cover_surfacing",
+      "label": "Surfaçage de couverture",
+      "input": "select",
+      "values": [
+        "Couché mat 300 g",
+        "Couché mat 350 g",
+        "Couché satin 300 g",
+        "Couché satin 350 g",
+        "Couché brillant 300 g",
+        "Couché brillant 350 g"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "total_copies_to_print",
+      "label": "Total d'exemplaire à imprimer",
+      "input": "text",
+      "values": null
+    },
+    {
+      "id": 6,
+      "name": "total_pages",
+      "label": "Nombre total de pages",
+      "input": "text",
+      "values": null
+    }
+  ]
+}
