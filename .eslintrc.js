@@ -15,12 +15,7 @@ module.exports = {
   },
   plugins: ['react', 'prettier'],
   rules: {
-    'no-console': [
-      'error',
-      {
-        allow: ['warn', 'error'],
-      },
-    ],
+    'no-console': 'off',
     'import/no-unresolved': 'off',
     'no-debugger': 'error',
     'no-multi-str': 'off',

@@ -6,6 +6,7 @@
     "@types/node": "^12.20.7",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
+    "eslint-config-react": "^1.1.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -13,12 +14,14 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently -c \"blue,green\" \"npm:start-server\" \"npm:start-app\"",
+    "start-server": "json-server db.json",
+    "start-app": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint 'src/**/*.{js,tsx,ts}'",
-    "lint:fix": "eslint 'src/**/*.{js,tsx,ts}' --fix",
+    "lint": "eslint 'src/**/*.{tsx,ts}'",
+    "lint:fix": "eslint 'src/**/*.{tsx,ts}' --fix",
     "format": "prettier --write 'src/**/*.(js|json|s?css|tsx)'"
   },
   "eslintConfig": {
@@ -39,12 +42,14 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.21.0",
-    "@typescript-eslint/parser": "^4.21.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "concurrently": "^6.0.2",
     "eslint": "^7.24.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
+    "json-server": "^0.16.3",
     "prettier": "^2.2.1"
   }
 }

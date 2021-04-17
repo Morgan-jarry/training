@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Training with Typescript on Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

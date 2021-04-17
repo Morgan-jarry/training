@@ -4,8 +4,10 @@
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
+      "es2015.promise"
     ],
+    "baseUrl": "src",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
