@@ -48,12 +48,6 @@ module.exports = {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/no-unescaped-entities': 'off',
-    'react/prop-types': [
-      'warn',
-      {
-        ignore: ['children', 'className'],
-      },
-    ],
     'react/react-in-jsx-scope': 'off',
     semi: 'off',
   },
