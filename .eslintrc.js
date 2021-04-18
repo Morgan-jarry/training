@@ -15,12 +15,7 @@ module.exports = {
   },
   plugins: ['react', 'prettier'],
   rules: {
-    'no-console': [
-      'error',
-      {
-        allow: ['warn', 'error'],
-      },
-    ],
+    'no-console': 'off',
     'import/no-unresolved': 'off',
     'no-debugger': 'error',
     'no-multi-str': 'off',
@@ -53,12 +48,6 @@ module.exports = {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/no-unescaped-entities': 'off',
-    'react/prop-types': [
-      'warn',
-      {
-        ignore: ['children', 'className'],
-      },
-    ],
     'react/react-in-jsx-scope': 'off',
     semi: 'off',
   },
