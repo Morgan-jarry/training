@@ -1,0 +1,34 @@
+@tailwind base;
+
+@layer base {
+  .markdown {
+    h1 {
+      @apply text-2xl;
+      @apply mt-4 mb-2;
+    }
+    h2 {
+      @apply text-xl;
+      @apply mt-4 mb-2;
+    }
+    h3 {
+      @apply text-lg;
+      @apply mt-3 mb-1;
+    }
+    p {
+      @apply my-1;
+    }
+    a {
+      @apply text-blue-600 underline;
+    }
+    ul {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+    em {
+      @apply font-bold;
+    }
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
